@@ -1,0 +1,19 @@
+# AMNOS Browser signed ruleset static feed (public bytes, private signer).
+# Paths must remain physical files: no SPA fallback, no rewrites to HTML.
+<IfModule mod_setenvif.c>
+    SetEnvIf Request_URI "^/browser-rulesets/" no-gzip=1 no-brotli=1
+</IfModule>
+<IfModule mod_mime.c>
+    AddType application/json .json
+</IfModule>
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    <FilesMatch "^latest\.manifest\.json$">
+        Header always set Cache-Control "no-store, max-age=0"
+        Header always set Content-Type "application/json; charset=utf-8"
+    </FilesMatch>
+    <FilesMatch "^ruleset\.json$">
+        Header always set Cache-Control "public, max-age=31536000, immutable"
+        Header always set Content-Type "application/json; charset=utf-8"
+    </FilesMatch>
+</IfModule>
