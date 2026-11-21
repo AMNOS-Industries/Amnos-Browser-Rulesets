@@ -1,0 +1,10 @@
+{
+  "blocked_domains": 63356,
+  "candidate_sequence": 2,
+  "payload_sha256": "52982e6a3bf88090381bbc2e26cabe386a177a6a9b466a812d5ca6286be9b71b",
+  "production_manifest_published": false,
+  "public_spki_sha256": "06cdbb0744db68bb9b9763739a8db9b8c7ed086d9f61aa2653b2395a7e29c95a",
+  "release_signing_key_id": "prod-p256-2026-11",
+  "status": "pending_hsm_signature_and_publication",
+  "third_party_notices_sha256": "3a4acad9a471254fc9cb059d0455b17043c2d85f0f0bcef2a31a3160d16f776f"
+}
