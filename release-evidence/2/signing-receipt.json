@@ -1,0 +1,12 @@
+{
+    "type":  "amnos-browser-public-signing-receipt",
+    "sequence":  2,
+    "domains":  63356,
+    "payload_sha256":  "52982e6a3bf88090381bbc2e26cabe386a177a6a9b466a812d5ca6286be9b71b",
+    "manifest_sha256":  "2a4b5c7b2f41ad5003a43caef61b9492629c93afa16446807b595685e8e61ba6",
+    "signing_key_id":  "prod-p256-2026-11",
+    "public_spki_sha256":  "06cdbb0744db68bb9b9763739a8db9b8c7ed086d9f61aa2653b2395a7e29c95a",
+    "issued_at":  "2026-11-21T23:46:10Z",
+    "stage":  "immutable_payload_only",
+    "production_manifest_deployed":  false
+}
