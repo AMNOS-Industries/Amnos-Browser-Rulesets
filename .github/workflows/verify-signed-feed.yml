@@ -22,6 +22,8 @@ jobs:
           persist-credentials: false
       - name: Validate HSM ECDSA signatures, exact payload hashes and release-state invariants
         run: python3 scripts/verify_signed_feed.py
+      - name: Test immutable release history and reject rollback regressions
+        run: python3 -m unittest discover -s scripts -p 'test_release_policy.py' -v
       - name: Reject changes to previously published versioned files
         shell: bash
         run: |
